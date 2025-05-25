@@ -1,4 +1,4 @@
-numpy==2.0.2
+numpy==1.26.0
 pandas==2.2.2
 streamlit==1.13.0
 catboost==1.2.7
