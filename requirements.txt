@@ -1,6 +1,6 @@
 numpy==2.0.2
 pandas==2.2.2
-pickle5==0.0.12
+pickle5==0.0.11
 streamlit==1.13.0
 catboost==1.2.6
 altair==4.0
