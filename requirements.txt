@@ -2,6 +2,6 @@ numpy==2.0.2
 pandas==2.2.2
 streamlit==1.13.0
 catboost==1.2.7
-cloudpickle=3.0.0
+cloudpickle==3.0.0
 altair==4.0
 scikit-learn==1.6.1
