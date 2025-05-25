@@ -1,5 +1,5 @@
 numpy==2.0.2
-pandas==1.3.5
+pandas==2.2.2
 pickle5==0.0.12
 streamlit==1.13.0
 catboost==1.2.6
