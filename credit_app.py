@@ -69,8 +69,37 @@ def create_input_df():
     return df, numeric_features
 
 # Интерфейс приложения
-st.title('Credit_AI_Assistant')
+st.write("<h1 style='text-align: center; color: #FF7F50;'> Credit_AI_Assistant</h1>", unsafe_allow_html=True)
 st.image('data/main.png')
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+col1, col2, col3, col4 = st.columns(4)
+
+
+with col1:
+   st.image("data/artificial intelligence.png", width=125)
+   st.text_area('Text to analyze', '''This application makes predictions based on  Machine learning model build on curated dataset.  The  model was developed using open-source CatBoost.  CatBoost is an open-source software library developed by Yandex. It provides a gradient boosting framework which, among other features, attempts to solve for categorical features using a permutation-driven alternative to the classical algorithm''', height=350, label_visibility="hidden" )
+
+
+with col2:
+   st.image("data/checklist.png", width=125)
+   st.text_area('Text to analyze', '''We follow the best practices for model development and validation.  The machine learning model for predicting credit risk using the German Credit dataset. The dataset consists of various attributes such as age, sex, job, credit history, and more to predict whether a person has a good or bad credit risk. The original dataset contains 1000 entries with 20 categorial/symbolic attributes prepared by Prof. Hofmann''', height=350, label_visibility="hidden" )
+
+
+with col3:
+   st.image("data/strong.png", width=125)
+   st.text_area('Text to analyze', '''The  model showed high predictive power with vigorous validation metrics for test set, achieving AUC-ROC, F1-score, Precision, Recall  from 78 to 88%. The target variable is a binary classification where the output indicates whether a person has good or bad credit risk.''', height=350, label_visibility="hidden" )
+
+
+with col4:
+   st.image("data/puzzle-piece.png", width=125)
+   st.text_area('**Bioavailability Radar**', '''A benefit of using gradient boosting is that after the boosted trees are constructed, it is relatively straightforward to retrieve importance scores for each attribute.''', height=350, label_visibility="hidden" )
+
 st.write('Enter client details to predict credit risk:')
 
 # Создаем DataFrame с вводом данных
